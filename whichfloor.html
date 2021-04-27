@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var maximum_stories = 10;
+      var userinput = prompt("On what floor of the building is your office?");
+      var floor = parseInt(userinput);
+      while (floor > 10) {
+        console.log("This building only has 10 floors. Please, enter another number...");
+        userinput = prompt("What floor is your office on?");
+        floor = parseInt(userinput);
+      }
+      console.log("Congratulations, " + floor + " is a valid floor number for this building")
+    </script>
+  </body>
+</html>
